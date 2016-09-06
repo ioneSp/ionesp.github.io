@@ -1148,12 +1148,12 @@ iframe {
 		height: 16px;
 		display: block;
 		position: absolute;
-		padding: 15px;
+		padding: 20px;
 		top: 15px;
 		right: 20px;
 		z-index: 10;
 		background: url(../images/mobile-button.png) center no-repeat;
-		border: 3px solid #fff;
+		border: 2px solid #fff;
 	}
 	.mobile-button.close-btn {
 		background: url("../images/mobile-button_close.png") center no-repeat;

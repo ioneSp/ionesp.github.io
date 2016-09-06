@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="93ebb60f-53f6-423a-b1af-86edc548cc1f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/landing.css" afterPath="$PROJECT_DIR$/css/landing.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="zenlink.loc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,8 +26,8 @@
       <file leaf-file-name="landing.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/landing.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="1196" column="28" selection-start-line="1196" selection-start-column="28" selection-end-line="1196" selection-end-column="28" />
+            <state relative-caret-position="293">
+              <caret line="1157" column="30" selection-start-line="1157" selection-start-column="30" selection-end-line="1157" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -191,15 +190,15 @@
       <option name="presentableId" value="Default" />
       <updated>1473100023023</updated>
       <workItem from="1473100024687" duration="5253000" />
-      <workItem from="1473200815066" duration="3132000" />
+      <workItem from="1473200815066" duration="3558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8385000" />
+    <option name="totallyTimeSpent" value="8811000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1430" y="2" width="1381" height="733" extended-state="1" />
+    <frame x="1430" y="2" width="1381" height="733" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25283876" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -263,8 +262,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/landing.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="1196" column="28" selection-start-line="1196" selection-start-column="28" selection-end-line="1196" selection-end-column="28" />
+        <state relative-caret-position="293">
+          <caret line="1157" column="30" selection-start-line="1157" selection-start-column="30" selection-end-line="1157" selection-end-column="30" />
           <folding />
         </state>
       </provider>
