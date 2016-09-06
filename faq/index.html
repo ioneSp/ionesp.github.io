@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="NGpkQkdPVUtlPi0NHwgSEX0ML3EVKxkmVR9cCTF4ESJjLAoAJnsvfg==">
+	<title>Все вопросы</title>
+	<link href="/assets/a32a4e9a/css/bootstrap.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+<link href="/css/bootstrap-mod.css" rel="stylesheet">
+<link href="/css/site.css" rel="stylesheet">
+<link href="/css/select/demo.css" rel="stylesheet">
+<link href="/css/select/jquery.formstyler.css" rel="stylesheet">
+<script src="/assets/55d518d5/jquery.js"></script>
+<script src="/assets/bbc7a149/yii.js"></script>
+<script src="/js/checktree/jquery-checktree.js"></script>
+<script src="/js/inputmask/inputmask.js"></script>
+<script src="/js/inputmask/jquery.inputmask.js"></script>
+<script src="/js/select/jquery.formstyler.js"></script>
+<script src="/js/site.js"></script>	<link href="/images/favicon.png" rel="icon" type="image/x-icon"/>
+</head>
+
+<!-- Код тега ремаркетинга Google -->
+<!--------------------------------------------------
+С помощью тега ремаркетинга запрещается собирать информацию, по которой можно идентифицировать личность пользователя. Также запрещается размещать тег на страницах с контентом деликатного характера. Подробнее об этих требованиях и о настройке тега читайте на странице http://google.com/ads/remarketingsetup.
+--------------------------------------------------->
+<script type="text/javascript">
+	/* <![CDATA[ */
+	var google_conversion_id = 999764196;
+	var google_custom_params = window.google_tag_params;
+	var google_remarketing_only = true;
+	/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+	<div style="display:inline;">
+		<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/999764196/?value=0&amp;guid=ON&amp;script=0"/>
+	</div>
+</noscript>
+
+<body>
+
+<div class="wrap">
+	<nav id="main-menu" class="navbar" role="navigation"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="/"><img src="/images/logo.png" alt="zenlink"></a></div><div id="main-menu-collapse" class="collapse navbar-collapse"><ul id="w0" class="navbar-nav navbar-left nav"><li><a href="/register/">Регистрация</a></li>
+<li><a href="/login/">Вход</a></li>
+<li class="active"><a href="/faq/">FAQ</a></li>
+<li><a href="/about/">О проекте</a></li></ul></div></div></nav>
+	<style>
+
+		a {
+			outline: none !important;
+		}
+
+		.nav .dropdown-toggle {
+			  padding-bottom: 10px !important;
+		  }
+
+		.nav .open > a {
+			border-top: 5px solid #44B770 !important;
+			background-color: transparent !important;
+			color: #44B770 !important;
+		}
+
+		.nav > li > a:focus {
+			background-color: transparent !important;
+			color: #44B770 !important;
+		}
+
+		#nav-dropdown-menu {
+			background-color: transparent !important;
+		}
+
+		/* Наверх */
+		.button-up {
+			position: fixed;
+			right: 0;
+			z-index: 20;
+			width: 60px;
+			background: url(../images/up.png) bottom center no-repeat;
+			opacity: 0;
+			cursor: pointer;
+			pointer-events: none;
+		}
+
+		.button-up.part {
+			margin-top: 2px;
+			height: 25px;
+			top: 100%;
+		}
+
+		.button-up.full {
+			height: 100%;
+			top: 0;
+		}
+
+		.button-up.show {
+			opacity: 1;
+			pointer-events: auto;
+		}
+
+		.button-up.part.show {
+			margin-top: -25px;
+		}
+
+		.button-up.full.show {
+
+		}
+
+		.button-up.onscroll.show {
+			background-image: url(../images/up-hover.png);
+		}
+
+		.button-up.full.onscroll.show {
+			background-position: bottom 40px center;
+		}
+
+		.button-up.part.onscroll.show {
+			margin-top: -40px;
+		}
+
+		.button-up:hover {
+			background-image: url(../images/up-hover.png);
+		}
+
+		.button-up.full:hover {
+			background-color: rgba(16, 16, 16, 0.30);
+		}
+
+		.duration03 {
+			-webkit-transition-duration: 0.3s;
+			-o-transition-duration: 0.3s;
+			-moz-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+		}
+
+	</style>
+
+	<script>
+
+		// Запрет drag&drop
+		$(document).on('ready', function(){
+
+			$('a').mousedown(function (e) {
+				e.stopPropagation();
+				e.preventDefault();
+				return false;
+			});
+
+			setUp();
+
+		});
+
+		function setUp() {
+
+			var btn = $('.button-up');
+
+			if(btn.length) {
+				(function() {
+					btn.click(function() {
+						$("html:not(:animated), body:not(animated)").animate({
+							scrollTop: 0
+						}, 600);
+					});
+
+					var timer;
+
+					$(window).scroll(function() {
+						var st = $(window).scrollTop();
+
+						btn[st > 250 ? "addClass" : "removeClass"]("show");
+
+						if(timer) {
+							clearTimeout(timer);
+							timer = null;
+						}
+
+						timer = setTimeout(function() {
+							$('.button-up').removeClass('onscroll');
+						}, 400);
+
+						btn.addClass("onscroll");
+					});
+				})();
+			}
+		}
+
+
+	</script>
+
+	<div class="container">
+				<style>
+.elem_rating {
+	color: #44B770;
+}
+.elem_rating i {
+	width: 12px;
+}
+.modal-body a,
+.texting a {
+	color: #44B770;
+}
+.texting img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+</style>
+<div class="page-cnt faq">
+	<div class="wfix">
+
+		<div class="name-page">Все вопросы</div>
+
+				<div style="margin-top:20px" class="name-cat">Часто задаваемые вопросы</div>
+		<div class="links">
+			<ul>
+							<li>
+					<a href="#q30" data-id="30" data-original-title="" data-toggle="popover" data-trigger="hover"
+					   data-placement="bottom" data-content="Естественное продвижение заключается в создании социальной активности вокруг Вашего сайта. Простой пример: появился новый сайт, и люди начинают его обсуждать. Как они это делают? Пишут сообщения о нём на форумах, в социальных сетях, комментируют видео, задают вопросы. Именно такие сайты с естественным обсуждением и выходят в ТОП. Ведь поисковые системы видят настоящую, живую активность клиентов, а не искусственный интерес, который может только навредить.">
+						Что такое естественные ссылки и в чем их преимущества?					</a>
+				</li>
+							<li>
+					<a href="#q31" data-id="31" data-original-title="" data-toggle="popover" data-trigger="hover"
+					   data-placement="bottom" data-content="Это естественно, а потому безопасно. Мы имитируем Ваших клиентов, которые могли бы обсуждать Ваш сайт, задавать вопросы и размещать отзывы о нём.  ">
+						Насколько безопасны естественные ссылки?					</a>
+				</li>
+							<li>
+					<a href="#q32" data-id="32" data-original-title="" data-toggle="popover" data-trigger="hover"
+					   data-placement="bottom" data-content="Все ссылки мы распределяем по ресурсам согласно заданному Вами процентному соотношению типов площадок.">
+						Где размещаются ссылки? Как отбираются площадки?					</a>
+				</li>
+							<li>
+					<a href="#q33" data-id="33" data-original-title="" data-toggle="popover" data-trigger="hover"
+					   data-placement="bottom" data-content="Нами проверяется выдача поисковых систем по запросам Вашей тематики. Подбираются площадки, где идет живая переписка. На этих площадках размещается пост со ссылкой на сайт клиента.">
+						Каков принцип размещения ссылок?					</a>
+				</li>
+							<li>
+					<a href="#q34" data-id="34" data-original-title="" data-toggle="popover" data-trigger="hover"
+					   data-placement="bottom" data-content="Запрещены такие тематики как: адалт, наркотики, подозрительные медицинские препараты.">
+						Какие тематики запрещены для продвижения с помощью сервиса?					</a>
+				</li>
+							<li>
+					<a href="#q35" data-id="35" data-original-title="" data-toggle="popover" data-trigger="hover"
+					   data-placement="bottom" data-content="Вы можете выбрать любой удобный для Вас способ оплаты: Яндекс.Деньги, Web Money или систему Interkassa (QIWI, Салоны связи, Билайн, Тинькофф, Промсвязьбанк, Альфабанк, Сбербанк Онлайн).">
+						Как я могу оплатить проект?					</a>
+				</li>
+							<li>
+					<a href="#q38" data-id="38" data-original-title="" data-toggle="popover" data-trigger="hover"
+					   data-placement="bottom" data-content="Выбирайте только те регионы, в которых вы осуществляете деятельность и хотите, чтобы жители этого региона видели Ваш сайт.">
+						Какую мне выбрать географию?					</a>
+				</li>
+							<li>
+					<a href="#q40" data-id="40" data-original-title="" data-toggle="popover" data-trigger="hover"
+					   data-placement="bottom" data-content="Размещение ссылок занимает от пяти дней до одного месяца. Сроки зависят от размера Вашего заказа. Мы всегда соблюдаем правило естественности и размещаем ссылки постепенно и равномерно в течение всего периода работ. Ваш сайт получает постепенный прирост, что положительно оценивается поисковыми системами. Все ссылки Вы видите в личном кабинете по мере их проверки нашими специалистами.">
+						Сколько времени занимает размещение ссылок по разным пакетам?					</a>
+				</li>
+						</ul>
+			<div class="clr"></div>
+		</div>
+		
+		<div class="left-block catfaq">
+			<div class="name-cat">Вопросы по теме</div>
+			<ul>
+				<li><a href="/faq/">Все вопросы</a></li><li><a href="/faq/?cat_id=1">Основные вопросы</a></li><li><a href="/faq/?cat_id=2">Оплата</a></li><li><a href="/faq/?cat_id=3">Настройка проекта</a></li>			</ul>
+			<div class="clr"></div>
+		</div>
+
+		<div class="right-block">
+
+			<div class="bfaq">
+				<div class="name-cat">Все вопросы</div>
+				<div id="faq-list">
+					
+<div class="elem" id="nq30" data-id="30">
+	<div class="name">Что такое естественные ссылки и в чем их преимущества?</div>
+	<div class="rating">
+		Рейтинг:		<span class="elem_rating">
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+					</span>
+	</div>
+	<div class="texting"><p>Естественное продвижение заключается в создании социальной активности вокруг Вашего сайта. Простой пример: появился новый сайт, и люди начинают его обсуждать. Как они это делают? Пишут сообщения о нём на форумах, в социальных сетях, комментируют видео, задают вопросы. Именно такие сайты с естественным обсуждением и выходят в ТОП. Ведь поисковые системы видят настоящую, живую активность клиентов, а не искусственный интерес, который может только навредить.</p></div>
+	</div>
+
+<div class="elem" id="nq31" data-id="31">
+	<div class="name">Насколько безопасны естественные ссылки?</div>
+	<div class="rating">
+		Рейтинг:		<span class="elem_rating">
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+					</span>
+	</div>
+	<div class="texting"><p>Это естественно, а потому безопасно. Мы имитируем Ваших клиентов, которые могли бы обсуждать Ваш сайт, задавать вопросы и размещать отзывы о нём.</p></div>
+	</div>
+
+<div class="elem" id="nq32" data-id="32">
+	<div class="name">Где размещаются ссылки? Как отбираются площадки?</div>
+	<div class="rating">
+		Рейтинг:		<span class="elem_rating">
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+					</span>
+	</div>
+	<div class="texting"><p>Все ссылки мы распределяем по ресурсам согласно заданному Вами процентному соотношению типов площадок. Для размещения мы используем:</p>
+<p>1. Форумы. Все площадки отбираются из ТОП выдачи поисковых систем по основным запросам, касающимся тематики Вашего сайта. Это те ресурсы, где общается Ваша потенциальная целевая аудитория.</p>
+<p>2. Сайты - отзовики. Мы отобрали самые популярные сайты-отзовики в рунете. На них наши копирайтеры пишут качественные, уникальные отзывы от лица Ваших клиентов. Такое размещение улучшает репутацию Вашей компании и положительно сказывается на продвижении сайта за счет естественных ссылок.</p>
+<p>3. Статьи. В рамках каждого заказа мы предлагаем размещение вечных ссылок в статьях на площадках Вашей тематики. Все наши доноры имеют высокий ТИЦ и прошли все фильтры поисковых систем. Ссылки передают вес Вашему сайту и способствуют росту позиций.</p>
+<p>4. Прочие ресурсы. Для размещения естественных ссылок мы используем дополнительные популярные и эффективные ресурсы. Ссылки оставляются в вопросах-ответах, комментариях к статьям и видео, близких по тематике Вашему сайту. Такой способ очень полезен в рамках комплексного, естественного продвижения. Ссылки для людей дадут Вашему сайту рост посещаемости и позиций.</p></div>
+	</div>
+
+<div class="elem" id="nq33" data-id="33">
+	<div class="name">Каков принцип размещения ссылок?</div>
+	<div class="rating">
+		Рейтинг:		<span class="elem_rating">
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+					</span>
+	</div>
+	<div class="texting"><p>Нами проверяется выдача поисковых систем по запросам Вашей тематики. Подбираются площадки, где идет живая переписка. На этих площадках размещается пост со ссылкой на сайт клиента.</p></div>
+	</div>
+
+<div class="elem" id="nq34" data-id="34">
+	<div class="name">Какие тематики запрещены для продвижения с помощью сервиса?</div>
+	<div class="rating">
+		Рейтинг:		<span class="elem_rating">
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+					</span>
+	</div>
+	<div class="texting"><p>Запрещены такие тематики как: адалт, наркотики, подозрительные медицинские препараты.</p></div>
+	</div>
+
+<div class="elem" id="nq35" data-id="35">
+	<div class="name">Как я могу оплатить проект?</div>
+	<div class="rating">
+		Рейтинг:		<span class="elem_rating">
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+					</span>
+	</div>
+	<div class="texting"><p>Вы можете выбрать любой удобный для Вас способ оплаты: Яндекс.Деньги, Web Money или систему Interkassa (QIWI, Салоны связи, Билайн, Тинькофф, Промсвязьбанк, Альфабанк, Сбербанк Онлайн).</p></div>
+	</div>
+
+<div class="elem" id="nq37" data-id="37">
+	<div class="name">Как запустить проект?</div>
+	<div class="rating">
+		Рейтинг:		<span class="elem_rating">
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+					</span>
+	</div>
+	<div class="texting"><p>В личном кабинете Вам необходимо нажать кнопку "Добавить проект". После этого Вы попадаете на страницу, где вносите информацию о названии проекта, продвигаемую ссылку, географию проекта и список анкоров.<br />После сохранения параметров Вы попадете на страницу формирования бюджета и состава заказа</p>
+<p><img src="../../../img/faq/1.png" /></p>
+<p><br />Когда Вы определились с количеством ссылок и их распределением по источникам (форумы, статьи, отзывы, иное), необходимо сохранить изменения.</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="../../../img/faq/2.png" alt="" width="651" height="206" /><br />Поздравляем, Ваш проект успешно сохранен в системе!</p>
+<p>Вы видите его в личном кабинете. Следующий шаг - это оплата.<br />Для осуществления данного действия необходимо нажать на кнопку "Оплатить". Выберите в всплывающем окне 3 пункт "Оплата проекта"</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="../../../img/faq/3.png" width="370" height="117" /><br />Вы перешли на страницу оплаты проекта. Необходимо ознакомиться с Договором-офертой, затем нажать на соответствующую иконку оплаты.</p>
+<p>Вы оплачиваете проект удобным для Вас способом. <br />После того, как произошла оплата, Ваш проект считается запущенным.<br />Обработка Вашего заказа может занять до 3-х рабочих дней.</p></div>
+	</div>
+
+<div class="elem" id="nq38" data-id="38">
+	<div class="name">Какую мне выбрать географию?</div>
+	<div class="rating">
+		Рейтинг:		<span class="elem_rating">
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+					</span>
+	</div>
+	<div class="texting"><p>Выбирайте только те регионы, в которых вы осуществляете деятельность и хотите, чтобы жители этого региона видели Ваш сайт.</p></div>
+	</div>
+
+<div class="elem" id="nq39" data-id="39">
+	<div class="name">Могу ли я подобрать сразу большой список ключевых слов и загрузить в сервис?</div>
+	<div class="rating">
+		Рейтинг:		<span class="elem_rating">
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+					</span>
+	</div>
+	<div class="texting"><p>Да, Вы можете добавить сразу большой список ключевых слов. Для этого у нас есть специальная функция добавления большого количества запросов.</p></div>
+	</div>
+
+<div class="elem" id="nq40" data-id="40">
+	<div class="name">Сколько времени занимает размещение ссылок по разным пакетам?</div>
+	<div class="rating">
+		Рейтинг:		<span class="elem_rating">
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+					</span>
+	</div>
+	<div class="texting"><p>Размещение ссылок занимает от пяти дней до одного месяца. Сроки зависят от размера Вашего заказа. Мы всегда соблюдаем правило естественности и размещаем ссылки постепенно и равномерно в течение всего периода работ. Ваш сайт получает постепенный прирост, что положительно оценивается поисковыми системами. Все ссылки Вы видите в личном кабинете по мере их проверки нашими специалистами.</p></div>
+	</div>
+
+<div class="elem" id="nq41" data-id="41">
+	<div class="name">Как продлить проект ранее срока окончания периода?</div>
+	<div class="rating">
+		Рейтинг:		<span class="elem_rating">
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+					</span>
+	</div>
+	<div class="texting"><p>Вы можете продлить проект на новый период, не дожидаясь окончания предыдущего. Для этого в личном кабинете Вам необходимо нажать кнопку "Продлить проект"</p>
+<p><img src="../../../img/faq/4.png" alt="" width="1339" height="300" /></p>
+<p>&nbsp;</p>
+<p>Теперь Вы можете задать новые параметры проекта для продвижения:<br />- поменять географию проекта<br />- изменить список анкоров<br />- изменить процентное распределение ссылок по видам площадок (форумы, отзывы, статьи, соц.сети)<br />- изменить количество ссылок</p>
+<p>После внесения изменений и сохранения проекта Вы будете перенаправлены на страницу оплаты.<br />Как только сумма оплаты зачисляется в системе, Ваш проект считается продленным. Работы по нему возобновляются.</p></div>
+	</div>
+
+<div class="elem" id="nq42" data-id="42">
+	<div class="name">Как остановить проект и прервать размещение?</div>
+	<div class="rating">
+		Рейтинг:		<span class="elem_rating">
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+					</span>
+	</div>
+	<div class="texting"><p>Если Вы хотите на время приостановить работы по проекту, Вам необходимо нажать на кнопку "Остановить проект" в личном кабинете.</p>
+<p><img src="../../../img/faq/5.png" alt="" width="1349" /></p>
+<p>Проект будет остановлен в течение 2-х рабочих дней. Сумма за невыполненные посты пересчитывается и возвращается на Ваш баланс за вычетом 30%. Данная процедура проводится автоматически через два дня с момента остановки проекта. Если в течение данного срока Вы хотите продолжить работы, нажмите на кнопку "Продлить" и проект снова вернется в работу.</p></div>
+	</div>
+
+<div class="elem" id="nq43" data-id="43">
+	<div class="name">Как мне проверить и принять / не принять размещенные ссылки?</div>
+	<div class="rating">
+		Рейтинг:		<span class="elem_rating">
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+					</span>
+	</div>
+	<div class="texting"><p>Ссылки появляются в личном кабинете постепенно, по мере готовности. Перед тем, как попасть в личный кабинет, ссылка проходит двуступенчатую систему контроля на производстве.</p>
+<p>С момента появления ссылки в личном кабинете, Вы можете её принять или отклонить.</p>
+<p>Если Вы хотите отклонить ссылку, необходимо нажать на кнопку "Открыть спор". Далее необходимо указать причину отклонения. Наш менеджер ответит на спор. Каждое сообщение по спору рассматривается в индивидуальном порядке. Если мы приняли Ваше отклонение, то запускается процесс восстановления ссылки. Исправленные ссылки также появляются в личном кабинете по мере готовности.</p></div>
+	</div>
+
+<div class="elem" id="nq36" data-id="36">
+	<div class="name">Бонусы за объем ссылок?</div>
+	<div class="rating">
+		Рейтинг:		<span class="elem_rating">
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+					</span>
+	</div>
+	<div class="texting"><p>Для тех клиентов, которые заказывают пакеты от 80 ссылок и выше, предусмотрена специальная цена - 250 рублей за 1 ссылку. Стандартная стоимость ссылки при меньшем заказе составляет 269 рублей.</p>
+<p>Сниженная цена актуальна при заказе от 80 ссылок и более для одного проекта при единоразовом платеже.</p>
+<p>Если Вы хотите заказать большой объем ссылок с разбивкой на несколько проектов, мы готовы рассмотреть данное предложение в индивидуальном порядке. По всем вопросам Вы можете писать на почту Службы Технической поддержки сервиса <a href="mailto:support@zenlink.ru">support@zenlink.ru</a></p></div>
+	</div>
+				</div>
+							</div>
+		</div>
+
+		<div id="answer-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body"></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<script id="frequency-data" type="application/json">{"30":"<p>\u0415\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0435 \u043f\u0440\u043e\u0434\u0432\u0438\u0436\u0435\u043d\u0438\u0435 \u0437\u0430\u043a\u043b\u044e\u0447\u0430\u0435\u0442\u0441\u044f \u0432 \u0441\u043e\u0437\u0434\u0430\u043d\u0438\u0438 \u0441\u043e\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0439 \u0430\u043a\u0442\u0438\u0432\u043d\u043e\u0441\u0442\u0438 \u0432\u043e\u043a\u0440\u0443\u0433 \u0412\u0430\u0448\u0435\u0433\u043e \u0441\u0430\u0439\u0442\u0430. \u041f\u0440\u043e\u0441\u0442\u043e\u0439 \u043f\u0440\u0438\u043c\u0435\u0440: \u043f\u043e\u044f\u0432\u0438\u043b\u0441\u044f \u043d\u043e\u0432\u044b\u0439 \u0441\u0430\u0439\u0442, \u0438 \u043b\u044e\u0434\u0438 \u043d\u0430\u0447\u0438\u043d\u0430\u044e\u0442 \u0435\u0433\u043e \u043e\u0431\u0441\u0443\u0436\u0434\u0430\u0442\u044c. \u041a\u0430\u043a \u043e\u043d\u0438 \u044d\u0442\u043e \u0434\u0435\u043b\u0430\u044e\u0442? \u041f\u0438\u0448\u0443\u0442 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f \u043e \u043d\u0451\u043c \u043d\u0430 \u0444\u043e\u0440\u0443\u043c\u0430\u0445, \u0432 \u0441\u043e\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u0445 \u0441\u0435\u0442\u044f\u0445, \u043a\u043e\u043c\u043c\u0435\u043d\u0442\u0438\u0440\u0443\u044e\u0442 \u0432\u0438\u0434\u0435\u043e, \u0437\u0430\u0434\u0430\u044e\u0442 \u0432\u043e\u043f\u0440\u043e\u0441\u044b. \u0418\u043c\u0435\u043d\u043d\u043e \u0442\u0430\u043a\u0438\u0435 \u0441\u0430\u0439\u0442\u044b \u0441 \u0435\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u043c \u043e\u0431\u0441\u0443\u0436\u0434\u0435\u043d\u0438\u0435\u043c \u0438 \u0432\u044b\u0445\u043e\u0434\u044f\u0442 \u0432 \u0422\u041e\u041f. \u0412\u0435\u0434\u044c \u043f\u043e\u0438\u0441\u043a\u043e\u0432\u044b\u0435 \u0441\u0438\u0441\u0442\u0435\u043c\u044b \u0432\u0438\u0434\u044f\u0442 \u043d\u0430\u0441\u0442\u043e\u044f\u0449\u0443\u044e, \u0436\u0438\u0432\u0443\u044e \u0430\u043a\u0442\u0438\u0432\u043d\u043e\u0441\u0442\u044c \u043a\u043b\u0438\u0435\u043d\u0442\u043e\u0432, \u0430 \u043d\u0435 \u0438\u0441\u043a\u0443\u0441\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u0438\u043d\u0442\u0435\u0440\u0435\u0441, \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u043c\u043e\u0436\u0435\u0442 \u0442\u043e\u043b\u044c\u043a\u043e \u043d\u0430\u0432\u0440\u0435\u0434\u0438\u0442\u044c.<\/p>","31":"<p>\u042d\u0442\u043e \u0435\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e, \u0430 \u043f\u043e\u0442\u043e\u043c\u0443 \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e. \u041c\u044b \u0438\u043c\u0438\u0442\u0438\u0440\u0443\u0435\u043c \u0412\u0430\u0448\u0438\u0445 \u043a\u043b\u0438\u0435\u043d\u0442\u043e\u0432, \u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u043c\u043e\u0433\u043b\u0438 \u0431\u044b \u043e\u0431\u0441\u0443\u0436\u0434\u0430\u0442\u044c \u0412\u0430\u0448 \u0441\u0430\u0439\u0442, \u0437\u0430\u0434\u0430\u0432\u0430\u0442\u044c \u0432\u043e\u043f\u0440\u043e\u0441\u044b \u0438 \u0440\u0430\u0437\u043c\u0435\u0449\u0430\u0442\u044c \u043e\u0442\u0437\u044b\u0432\u044b \u043e \u043d\u0451\u043c.<\/p>","32":"<p>\u0412\u0441\u0435 \u0441\u0441\u044b\u043b\u043a\u0438 \u043c\u044b \u0440\u0430\u0441\u043f\u0440\u0435\u0434\u0435\u043b\u044f\u0435\u043c \u043f\u043e \u0440\u0435\u0441\u0443\u0440\u0441\u0430\u043c \u0441\u043e\u0433\u043b\u0430\u0441\u043d\u043e \u0437\u0430\u0434\u0430\u043d\u043d\u043e\u043c\u0443 \u0412\u0430\u043c\u0438 \u043f\u0440\u043e\u0446\u0435\u043d\u0442\u043d\u043e\u043c\u0443 \u0441\u043e\u043e\u0442\u043d\u043e\u0448\u0435\u043d\u0438\u044e \u0442\u0438\u043f\u043e\u0432 \u043f\u043b\u043e\u0449\u0430\u0434\u043e\u043a. \u0414\u043b\u044f \u0440\u0430\u0437\u043c\u0435\u0449\u0435\u043d\u0438\u044f \u043c\u044b \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u043c:<\/p>\r\n<p>1. \u0424\u043e\u0440\u0443\u043c\u044b. \u0412\u0441\u0435 \u043f\u043b\u043e\u0449\u0430\u0434\u043a\u0438 \u043e\u0442\u0431\u0438\u0440\u0430\u044e\u0442\u0441\u044f \u0438\u0437 \u0422\u041e\u041f \u0432\u044b\u0434\u0430\u0447\u0438 \u043f\u043e\u0438\u0441\u043a\u043e\u0432\u044b\u0445 \u0441\u0438\u0441\u0442\u0435\u043c \u043f\u043e \u043e\u0441\u043d\u043e\u0432\u043d\u044b\u043c \u0437\u0430\u043f\u0440\u043e\u0441\u0430\u043c, \u043a\u0430\u0441\u0430\u044e\u0449\u0438\u043c\u0441\u044f \u0442\u0435\u043c\u0430\u0442\u0438\u043a\u0438 \u0412\u0430\u0448\u0435\u0433\u043e \u0441\u0430\u0439\u0442\u0430. \u042d\u0442\u043e \u0442\u0435 \u0440\u0435\u0441\u0443\u0440\u0441\u044b, \u0433\u0434\u0435 \u043e\u0431\u0449\u0430\u0435\u0442\u0441\u044f \u0412\u0430\u0448\u0430 \u043f\u043e\u0442\u0435\u043d\u0446\u0438\u0430\u043b\u044c\u043d\u0430\u044f \u0446\u0435\u043b\u0435\u0432\u0430\u044f \u0430\u0443\u0434\u0438\u0442\u043e\u0440\u0438\u044f.<\/p>\r\n<p>2. \u0421\u0430\u0439\u0442\u044b - \u043e\u0442\u0437\u043e\u0432\u0438\u043a\u0438. \u041c\u044b \u043e\u0442\u043e\u0431\u0440\u0430\u043b\u0438 \u0441\u0430\u043c\u044b\u0435 \u043f\u043e\u043f\u0443\u043b\u044f\u0440\u043d\u044b\u0435 \u0441\u0430\u0439\u0442\u044b-\u043e\u0442\u0437\u043e\u0432\u0438\u043a\u0438 \u0432 \u0440\u0443\u043d\u0435\u0442\u0435. \u041d\u0430 \u043d\u0438\u0445 \u043d\u0430\u0448\u0438 \u043a\u043e\u043f\u0438\u0440\u0430\u0439\u0442\u0435\u0440\u044b \u043f\u0438\u0448\u0443\u0442 \u043a\u0430\u0447\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0435, \u0443\u043d\u0438\u043a\u0430\u043b\u044c\u043d\u044b\u0435 \u043e\u0442\u0437\u044b\u0432\u044b \u043e\u0442 \u043b\u0438\u0446\u0430 \u0412\u0430\u0448\u0438\u0445 \u043a\u043b\u0438\u0435\u043d\u0442\u043e\u0432. \u0422\u0430\u043a\u043e\u0435 \u0440\u0430\u0437\u043c\u0435\u0449\u0435\u043d\u0438\u0435 \u0443\u043b\u0443\u0447\u0448\u0430\u0435\u0442 \u0440\u0435\u043f\u0443\u0442\u0430\u0446\u0438\u044e \u0412\u0430\u0448\u0435\u0439 \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u0438 \u0438 \u043f\u043e\u043b\u043e\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u0441\u043a\u0430\u0437\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u043d\u0430 \u043f\u0440\u043e\u0434\u0432\u0438\u0436\u0435\u043d\u0438\u0438 \u0441\u0430\u0439\u0442\u0430 \u0437\u0430 \u0441\u0447\u0435\u0442 \u0435\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0445 \u0441\u0441\u044b\u043b\u043e\u043a.<\/p>\r\n<p>3. \u0421\u0442\u0430\u0442\u044c\u0438. \u0412 \u0440\u0430\u043c\u043a\u0430\u0445 \u043a\u0430\u0436\u0434\u043e\u0433\u043e \u0437\u0430\u043a\u0430\u0437\u0430 \u043c\u044b \u043f\u0440\u0435\u0434\u043b\u0430\u0433\u0430\u0435\u043c \u0440\u0430\u0437\u043c\u0435\u0449\u0435\u043d\u0438\u0435 \u0432\u0435\u0447\u043d\u044b\u0445 \u0441\u0441\u044b\u043b\u043e\u043a \u0432 \u0441\u0442\u0430\u0442\u044c\u044f\u0445 \u043d\u0430 \u043f\u043b\u043e\u0449\u0430\u0434\u043a\u0430\u0445 \u0412\u0430\u0448\u0435\u0439 \u0442\u0435\u043c\u0430\u0442\u0438\u043a\u0438. \u0412\u0441\u0435 \u043d\u0430\u0448\u0438 \u0434\u043e\u043d\u043e\u0440\u044b \u0438\u043c\u0435\u044e\u0442 \u0432\u044b\u0441\u043e\u043a\u0438\u0439 \u0422\u0418\u0426 \u0438 \u043f\u0440\u043e\u0448\u043b\u0438 \u0432\u0441\u0435 \u0444\u0438\u043b\u044c\u0442\u0440\u044b \u043f\u043e\u0438\u0441\u043a\u043e\u0432\u044b\u0445 \u0441\u0438\u0441\u0442\u0435\u043c. \u0421\u0441\u044b\u043b\u043a\u0438 \u043f\u0435\u0440\u0435\u0434\u0430\u044e\u0442 \u0432\u0435\u0441 \u0412\u0430\u0448\u0435\u043c\u0443 \u0441\u0430\u0439\u0442\u0443 \u0438 \u0441\u043f\u043e\u0441\u043e\u0431\u0441\u0442\u0432\u0443\u044e\u0442 \u0440\u043e\u0441\u0442\u0443 \u043f\u043e\u0437\u0438\u0446\u0438\u0439.<\/p>\r\n<p>4. \u041f\u0440\u043e\u0447\u0438\u0435 \u0440\u0435\u0441\u0443\u0440\u0441\u044b. \u0414\u043b\u044f \u0440\u0430\u0437\u043c\u0435\u0449\u0435\u043d\u0438\u044f \u0435\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0445 \u0441\u0441\u044b\u043b\u043e\u043a \u043c\u044b \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u043c \u0434\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0435 \u043f\u043e\u043f\u0443\u043b\u044f\u0440\u043d\u044b\u0435 \u0438 \u044d\u0444\u0444\u0435\u043a\u0442\u0438\u0432\u043d\u044b\u0435 \u0440\u0435\u0441\u0443\u0440\u0441\u044b. \u0421\u0441\u044b\u043b\u043a\u0438 \u043e\u0441\u0442\u0430\u0432\u043b\u044f\u044e\u0442\u0441\u044f \u0432 \u0432\u043e\u043f\u0440\u043e\u0441\u0430\u0445-\u043e\u0442\u0432\u0435\u0442\u0430\u0445, \u043a\u043e\u043c\u043c\u0435\u043d\u0442\u0430\u0440\u0438\u044f\u0445 \u043a \u0441\u0442\u0430\u0442\u044c\u044f\u043c \u0438 \u0432\u0438\u0434\u0435\u043e, \u0431\u043b\u0438\u0437\u043a\u0438\u0445 \u043f\u043e \u0442\u0435\u043c\u0430\u0442\u0438\u043a\u0435 \u0412\u0430\u0448\u0435\u043c\u0443 \u0441\u0430\u0439\u0442\u0443. \u0422\u0430\u043a\u043e\u0439 \u0441\u043f\u043e\u0441\u043e\u0431 \u043e\u0447\u0435\u043d\u044c \u043f\u043e\u043b\u0435\u0437\u0435\u043d \u0432 \u0440\u0430\u043c\u043a\u0430\u0445 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0441\u043d\u043e\u0433\u043e, \u0435\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0433\u043e \u043f\u0440\u043e\u0434\u0432\u0438\u0436\u0435\u043d\u0438\u044f. \u0421\u0441\u044b\u043b\u043a\u0438 \u0434\u043b\u044f \u043b\u044e\u0434\u0435\u0439 \u0434\u0430\u0434\u0443\u0442 \u0412\u0430\u0448\u0435\u043c\u0443 \u0441\u0430\u0439\u0442\u0443 \u0440\u043e\u0441\u0442 \u043f\u043e\u0441\u0435\u0449\u0430\u0435\u043c\u043e\u0441\u0442\u0438 \u0438 \u043f\u043e\u0437\u0438\u0446\u0438\u0439.<\/p>","33":"<p>\u041d\u0430\u043c\u0438 \u043f\u0440\u043e\u0432\u0435\u0440\u044f\u0435\u0442\u0441\u044f \u0432\u044b\u0434\u0430\u0447\u0430 \u043f\u043e\u0438\u0441\u043a\u043e\u0432\u044b\u0445 \u0441\u0438\u0441\u0442\u0435\u043c \u043f\u043e \u0437\u0430\u043f\u0440\u043e\u0441\u0430\u043c \u0412\u0430\u0448\u0435\u0439 \u0442\u0435\u043c\u0430\u0442\u0438\u043a\u0438. \u041f\u043e\u0434\u0431\u0438\u0440\u0430\u044e\u0442\u0441\u044f \u043f\u043b\u043e\u0449\u0430\u0434\u043a\u0438, \u0433\u0434\u0435 \u0438\u0434\u0435\u0442 \u0436\u0438\u0432\u0430\u044f \u043f\u0435\u0440\u0435\u043f\u0438\u0441\u043a\u0430. \u041d\u0430 \u044d\u0442\u0438\u0445 \u043f\u043b\u043e\u0449\u0430\u0434\u043a\u0430\u0445 \u0440\u0430\u0437\u043c\u0435\u0449\u0430\u0435\u0442\u0441\u044f \u043f\u043e\u0441\u0442 \u0441\u043e \u0441\u0441\u044b\u043b\u043a\u043e\u0439 \u043d\u0430 \u0441\u0430\u0439\u0442 \u043a\u043b\u0438\u0435\u043d\u0442\u0430.<\/p>","34":"<p>\u0417\u0430\u043f\u0440\u0435\u0449\u0435\u043d\u044b \u0442\u0430\u043a\u0438\u0435 \u0442\u0435\u043c\u0430\u0442\u0438\u043a\u0438 \u043a\u0430\u043a: \u0430\u0434\u0430\u043b\u0442, \u043d\u0430\u0440\u043a\u043e\u0442\u0438\u043a\u0438, \u043f\u043e\u0434\u043e\u0437\u0440\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0435 \u043c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u0438\u0435 \u043f\u0440\u0435\u043f\u0430\u0440\u0430\u0442\u044b.<\/p>","35":"<p>\u0412\u044b \u043c\u043e\u0436\u0435\u0442\u0435 \u0432\u044b\u0431\u0440\u0430\u0442\u044c \u043b\u044e\u0431\u043e\u0439 \u0443\u0434\u043e\u0431\u043d\u044b\u0439 \u0434\u043b\u044f \u0412\u0430\u0441 \u0441\u043f\u043e\u0441\u043e\u0431 \u043e\u043f\u043b\u0430\u0442\u044b: \u042f\u043d\u0434\u0435\u043a\u0441.\u0414\u0435\u043d\u044c\u0433\u0438, Web Money \u0438\u043b\u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u0443 Interkassa (QIWI, \u0421\u0430\u043b\u043e\u043d\u044b \u0441\u0432\u044f\u0437\u0438, \u0411\u0438\u043b\u0430\u0439\u043d, \u0422\u0438\u043d\u044c\u043a\u043e\u0444\u0444, \u041f\u0440\u043e\u043c\u0441\u0432\u044f\u0437\u044c\u0431\u0430\u043d\u043a, \u0410\u043b\u044c\u0444\u0430\u0431\u0430\u043d\u043a, \u0421\u0431\u0435\u0440\u0431\u0430\u043d\u043a \u041e\u043d\u043b\u0430\u0439\u043d).<\/p>","38":"<p>\u0412\u044b\u0431\u0438\u0440\u0430\u0439\u0442\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0442\u0435 \u0440\u0435\u0433\u0438\u043e\u043d\u044b, \u0432 \u043a\u043e\u0442\u043e\u0440\u044b\u0445 \u0432\u044b \u043e\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043b\u044f\u0435\u0442\u0435 \u0434\u0435\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0438 \u0445\u043e\u0442\u0438\u0442\u0435, \u0447\u0442\u043e\u0431\u044b \u0436\u0438\u0442\u0435\u043b\u0438 \u044d\u0442\u043e\u0433\u043e \u0440\u0435\u0433\u0438\u043e\u043d\u0430 \u0432\u0438\u0434\u0435\u043b\u0438 \u0412\u0430\u0448 \u0441\u0430\u0439\u0442.<\/p>","40":"<p>\u0420\u0430\u0437\u043c\u0435\u0449\u0435\u043d\u0438\u0435 \u0441\u0441\u044b\u043b\u043e\u043a \u0437\u0430\u043d\u0438\u043c\u0430\u0435\u0442 \u043e\u0442 \u043f\u044f\u0442\u0438 \u0434\u043d\u0435\u0439 \u0434\u043e \u043e\u0434\u043d\u043e\u0433\u043e \u043c\u0435\u0441\u044f\u0446\u0430. \u0421\u0440\u043e\u043a\u0438 \u0437\u0430\u0432\u0438\u0441\u044f\u0442 \u043e\u0442 \u0440\u0430\u0437\u043c\u0435\u0440\u0430 \u0412\u0430\u0448\u0435\u0433\u043e \u0437\u0430\u043a\u0430\u0437\u0430. \u041c\u044b \u0432\u0441\u0435\u0433\u0434\u0430 \u0441\u043e\u0431\u043b\u044e\u0434\u0430\u0435\u043c \u043f\u0440\u0430\u0432\u0438\u043b\u043e \u0435\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0441\u0442\u0438 \u0438 \u0440\u0430\u0437\u043c\u0435\u0449\u0430\u0435\u043c \u0441\u0441\u044b\u043b\u043a\u0438 \u043f\u043e\u0441\u0442\u0435\u043f\u0435\u043d\u043d\u043e \u0438 \u0440\u0430\u0432\u043d\u043e\u043c\u0435\u0440\u043d\u043e \u0432 \u0442\u0435\u0447\u0435\u043d\u0438\u0435 \u0432\u0441\u0435\u0433\u043e \u043f\u0435\u0440\u0438\u043e\u0434\u0430 \u0440\u0430\u0431\u043e\u0442. \u0412\u0430\u0448 \u0441\u0430\u0439\u0442 \u043f\u043e\u043b\u0443\u0447\u0430\u0435\u0442 \u043f\u043e\u0441\u0442\u0435\u043f\u0435\u043d\u043d\u044b\u0439 \u043f\u0440\u0438\u0440\u043e\u0441\u0442, \u0447\u0442\u043e \u043f\u043e\u043b\u043e\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u043e\u0446\u0435\u043d\u0438\u0432\u0430\u0435\u0442\u0441\u044f \u043f\u043e\u0438\u0441\u043a\u043e\u0432\u044b\u043c\u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u0430\u043c\u0438. \u0412\u0441\u0435 \u0441\u0441\u044b\u043b\u043a\u0438 \u0412\u044b \u0432\u0438\u0434\u0438\u0442\u0435 \u0432 \u043b\u0438\u0447\u043d\u043e\u043c \u043a\u0430\u0431\u0438\u043d\u0435\u0442\u0435 \u043f\u043e \u043c\u0435\u0440\u0435 \u0438\u0445 \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0438 \u043d\u0430\u0448\u0438\u043c\u0438 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0441\u0442\u0430\u043c\u0438.<\/p>"}</script>
+
+<script type="text/javascript">
+jQuery('document').ready(function() {
+	var frequencyAnswers = JSON.parse($('#frequency-data').text());
+	var $modal = $('#answer-modal');
+
+	$('a[data-toggle=popover]')
+		.on('click', function() {
+			var $this = $(this);
+			$modal.find('.modal-title').text($this.text());
+			$modal.find('.modal-body').html(
+				frequencyAnswers[$(this).data('id')]
+			);
+			$modal.modal('show');
+		}).popover();
+
+	$('#faq-list').find('input').on('change', function() {
+		if (!this.checked) {
+			return;
+		}
+
+		var $this = $(this);
+		var $item = $this.parents('.elem').first();
+		$.post(
+			'/faq/rating/',
+			{
+				id: $item.data('id'),
+				rating: $this.val()
+			}
+		);
+
+		if ($this.val() == 'no') {
+			$('#support-modal').modal('show');
+		}
+
+	});
+});
+</script>	</div>
+	<!--footer-->
+	<footer class="footer">
+		<div class="wfix clearfix">
+			<div class="logo"></div>
+			<div class="copyright">&copy; 2014 - 2016 Zenlink. All rights reserved</div>
+
+			<a class="sup" href="mailto:support@zenlink.ru">Тех.поддержка</a>		</div>
+	</footer>
+	<!--/footer-->
+</div>
+
+
+<div class="clearfix"></div>
+
+
+
+
+<!-- Счётчики -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+	$(document).on("click", ".dropdownMenu3 li a", function () {
+		var $this = $(this),
+			str = $this.text();
+		$this.parent().parent().prev().children().html(str);
+		$('#supportform-subject :contains(' + str +')').attr("selected", "selected");
+		//$this.closest('tr').find('.geo :contains(' + str +')').attr("selected", "selected");
+	});
+
+	(function (d, w, c) {
+		(w[c] = w[c] || []).push(function() {
+			try {
+				w.yaCounter33533733 = new Ya.Metrika({
+					id:33533733,
+					clickmap:true,
+					trackLinks:true,
+					accurateTrackBounce:true,
+					webvisor:true
+				});
+			} catch(e) { }
+		});
+
+		var n = d.getElementsByTagName("script")[0],
+			s = d.createElement("script"),
+			f = function () { n.parentNode.insertBefore(s, n); };
+		s.type = "text/javascript";
+		s.async = true;
+		s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+		if (w.opera == "[object Opera]") {
+			d.addEventListener("DOMContentLoaded", f, false);
+		} else { f(); }
+	})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/33533733" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<!-- Google Analitics -->
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-70023525-1', 'auto');
+	ga('send', 'pageview');
+
+</script>
+<!-- /Google Analitics -->
+
+
+<div class="button-up show part duration03"></div>
+
+<script src="/assets/a32a4e9a/js/bootstrap.js"></script></body>
+</html>

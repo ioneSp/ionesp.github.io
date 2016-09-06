@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="YnhlSnJHenEzLCwFKgA9KyseLnkgIzYcAw1dAQRwPhg1PgsIE3MARA==">
+	<title>О сервисе Zenlink</title>
+	<link href="/assets/a32a4e9a/css/bootstrap.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+<link href="/css/bootstrap-mod.css" rel="stylesheet">
+<link href="/css/site.css" rel="stylesheet">
+<link href="/css/select/demo.css" rel="stylesheet">
+<link href="/css/select/jquery.formstyler.css" rel="stylesheet">
+<script src="/assets/55d518d5/jquery.js"></script>
+<script src="/assets/bbc7a149/yii.js"></script>
+<script src="/js/checktree/jquery-checktree.js"></script>
+<script src="/js/inputmask/inputmask.js"></script>
+<script src="/js/inputmask/jquery.inputmask.js"></script>
+<script src="/js/select/jquery.formstyler.js"></script>
+<script src="/js/site.js"></script>	<link href="/images/favicon.png" rel="icon" type="image/x-icon"/>
+</head>
+
+<!-- Код тега ремаркетинга Google -->
+<!--------------------------------------------------
+С помощью тега ремаркетинга запрещается собирать информацию, по которой можно идентифицировать личность пользователя. Также запрещается размещать тег на страницах с контентом деликатного характера. Подробнее об этих требованиях и о настройке тега читайте на странице http://google.com/ads/remarketingsetup.
+--------------------------------------------------->
+<script type="text/javascript">
+	/* <![CDATA[ */
+	var google_conversion_id = 999764196;
+	var google_custom_params = window.google_tag_params;
+	var google_remarketing_only = true;
+	/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+	<div style="display:inline;">
+		<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/999764196/?value=0&amp;guid=ON&amp;script=0"/>
+	</div>
+</noscript>
+
+<body>
+
+<div class="wrap">
+	<nav id="main-menu" class="navbar" role="navigation"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="/"><img src="/images/logo.png" alt="zenlink"></a></div><div id="main-menu-collapse" class="collapse navbar-collapse"><ul id="w0" class="navbar-nav navbar-left nav"><li><a href="/register/">Регистрация</a></li>
+<li><a href="/login/">Вход</a></li>
+<li><a href="/faq/">FAQ</a></li>
+<li class="active"><a href="/about/">О проекте</a></li></ul></div></div></nav>
+	<style>
+
+		a {
+			outline: none !important;
+		}
+
+		.nav .dropdown-toggle {
+			  padding-bottom: 10px !important;
+		  }
+
+		.nav .open > a {
+			border-top: 5px solid #44B770 !important;
+			background-color: transparent !important;
+			color: #44B770 !important;
+		}
+
+		.nav > li > a:focus {
+			background-color: transparent !important;
+			color: #44B770 !important;
+		}
+
+		#nav-dropdown-menu {
+			background-color: transparent !important;
+		}
+
+		/* Наверх */
+		.button-up {
+			position: fixed;
+			right: 0;
+			z-index: 20;
+			width: 60px;
+			background: url(../images/up.png) bottom center no-repeat;
+			opacity: 0;
+			cursor: pointer;
+			pointer-events: none;
+		}
+
+		.button-up.part {
+			margin-top: 2px;
+			height: 25px;
+			top: 100%;
+		}
+
+		.button-up.full {
+			height: 100%;
+			top: 0;
+		}
+
+		.button-up.show {
+			opacity: 1;
+			pointer-events: auto;
+		}
+
+		.button-up.part.show {
+			margin-top: -25px;
+		}
+
+		.button-up.full.show {
+
+		}
+
+		.button-up.onscroll.show {
+			background-image: url(../images/up-hover.png);
+		}
+
+		.button-up.full.onscroll.show {
+			background-position: bottom 40px center;
+		}
+
+		.button-up.part.onscroll.show {
+			margin-top: -40px;
+		}
+
+		.button-up:hover {
+			background-image: url(../images/up-hover.png);
+		}
+
+		.button-up.full:hover {
+			background-color: rgba(16, 16, 16, 0.30);
+		}
+
+		.duration03 {
+			-webkit-transition-duration: 0.3s;
+			-o-transition-duration: 0.3s;
+			-moz-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+		}
+
+	</style>
+
+	<script>
+
+		// Запрет drag&drop
+		$(document).on('ready', function(){
+
+			$('a').mousedown(function (e) {
+				e.stopPropagation();
+				e.preventDefault();
+				return false;
+			});
+
+			setUp();
+
+		});
+
+		function setUp() {
+
+			var btn = $('.button-up');
+
+			if(btn.length) {
+				(function() {
+					btn.click(function() {
+						$("html:not(:animated), body:not(animated)").animate({
+							scrollTop: 0
+						}, 600);
+					});
+
+					var timer;
+
+					$(window).scroll(function() {
+						var st = $(window).scrollTop();
+
+						btn[st > 250 ? "addClass" : "removeClass"]("show");
+
+						if(timer) {
+							clearTimeout(timer);
+							timer = null;
+						}
+
+						timer = setTimeout(function() {
+							$('.button-up').removeClass('onscroll');
+						}, 400);
+
+						btn.addClass("onscroll");
+					});
+				})();
+			}
+		}
+
+
+	</script>
+
+	<div class="container">
+				<div class="site-about">
+	<h1>О сервисе Zenlink</h1>
+
+	<p>Сервис Zenlink – это первый автоматический сервис, который специализируется на комплексном продвижении (размещении естественных ссылок, репутационных отзывов и статей). Он был создан для упрощения работы seo-специалистов, экономии их времени и средств. Zenlink исключает риск покупки некачественных естественных ссылок у частных исполнителей. Такие исполнители в большинстве случаев не обладают достаточным опытом и программным обеспечением для эффективного подбора площадок и размещения на них ссылок и отзывов от лица клиентов компании-заказчика.</p>
+
+	<p>Команда создателей сервиса состоит из seo-оптимизаторов, менеджеров, маркетологов, копирайтеров и насчитывает 52 специалиста, которые имеют весомый опыт в продвижении интернет-ресурсов и работают с 2002 года. Только за 2015 год выполнено 1564 проекта и размещено 646198 естественных ссылок. В ходе работы мы постоянно совершенствуем свои подходы, находим и создаем новые индивидуальные алгоритмы для эффективного продвижения сайтов и различных интернет-проектов.</p>
+
+	<p>В сервисе сформированы оптимальные, универсальные пакеты, которые включают ссылки, отзывы, вопросы-ответы и другие виды размещения на любой бюджет, что позволяет без специальных знаний пользоваться методами продвижения, которые сейчас в тренде.</p>
+
+	<p>Пользуясь сервисом Zenlink, Вы можете рассчитывать на рост позиций сайта за счет:</p>
+	<ul>
+		<li><span>Улучшения поведенческих факторов, поскольку Ваш сайт посещают живые, заинтересованные пользователи, которые приходят на ресурс по нашим ссылкам. Эти ссылки, в свою очередь, укрепляются за счет посещения Вашего сайта живыми людьми.</span></li>
+		<li><span>Естественных ссылок – хорошо воспринимаются поисковыми системами и индексируются ботом, укрепляя позиции сайта.</span></li>
+		<li><span>Безопасной полезной ссылочной массы, которая разбавляет арендную и покупную ссылочную массу.</span></li>
+		<li><span>Равномерного размещения ссылок – обеспечивает постепенную активность на ресурсе и не вызывает подозрений у поисковых систем.</span></li>
+		<li><span>Прочной репутации за счет размещения положительных отзывов на сайтах-отзовиках.</span></li>
+		<li><span>Качественных вечных ссылок в статьях с сайтов, проверенных Яндексом.</span></li>
+	</ul>
+
+</div>
+	</div>
+	<!--footer-->
+	<footer class="footer">
+		<div class="wfix clearfix">
+			<div class="logo"></div>
+			<div class="copyright">&copy; 2014 - 2016 Zenlink. All rights reserved</div>
+
+			<a class="sup" href="mailto:support@zenlink.ru">Тех.поддержка</a>		</div>
+	</footer>
+	<!--/footer-->
+</div>
+
+
+<div class="clearfix"></div>
+
+
+
+
+<!-- Счётчики -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+	$(document).on("click", ".dropdownMenu3 li a", function () {
+		var $this = $(this),
+			str = $this.text();
+		$this.parent().parent().prev().children().html(str);
+		$('#supportform-subject :contains(' + str +')').attr("selected", "selected");
+		//$this.closest('tr').find('.geo :contains(' + str +')').attr("selected", "selected");
+	});
+
+	(function (d, w, c) {
+		(w[c] = w[c] || []).push(function() {
+			try {
+				w.yaCounter33533733 = new Ya.Metrika({
+					id:33533733,
+					clickmap:true,
+					trackLinks:true,
+					accurateTrackBounce:true,
+					webvisor:true
+				});
+			} catch(e) { }
+		});
+
+		var n = d.getElementsByTagName("script")[0],
+			s = d.createElement("script"),
+			f = function () { n.parentNode.insertBefore(s, n); };
+		s.type = "text/javascript";
+		s.async = true;
+		s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+		if (w.opera == "[object Opera]") {
+			d.addEventListener("DOMContentLoaded", f, false);
+		} else { f(); }
+	})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/33533733" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<!-- Google Analitics -->
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-70023525-1', 'auto');
+	ga('send', 'pageview');
+
+</script>
+<!-- /Google Analitics -->
+
+
+<div class="button-up show part duration03"></div>
+
+<script src="/assets/a32a4e9a/js/bootstrap.js"></script></body>
+</html>

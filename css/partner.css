@@ -1,0 +1,371 @@
+.partner-header {
+    height: 538px;
+    background: url("/img/partner/line_1.jpg");
+    z-index: 1000;
+}
+
+.p-logo {
+    margin: 25px 0 15px 50px;
+    display: block;
+    float:left;
+}
+
+.partner-header .container h1 {
+    color: #fff !important;
+    text-align: center !important;
+    font-size: 30px;
+}
+
+.partner-header .container {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.partner-header .container p {
+    font-size: 15px;
+}
+
+.confirm-button-1 {
+    border-radius: 25px;
+    background: #fff url('/img/partner/line_1_btn_arr.png') no-repeat left center;
+    box-shadow: 0px 3px 7px 0px rgba(55, 104, 4, 0.35);
+    width: 320px;
+    height: 52px;
+    display: inline-block;
+    font-family: 'geometria', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #7d8c8f;
+    line-height: 52px;
+    text-decoration: none;
+    margin: 25px auto 10px auto;
+}
+.partner-header .container .pub{
+    font-size:14px;
+    color:#ffffff;
+    text-decoration: underline;
+}
+.partner-body{
+    text-align: center;
+
+}
+.partner-body h2, .partner-body h3{
+    font-family: 'geometria', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #74b673;
+    text-align: center;
+    position: relative;
+}
+.partner-body  h3{
+    font-size:28px;
+}
+.punkt{
+    border-width: 1px;
+    border-color: rgb(125, 140, 143);
+    border-style: solid;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    text-align: center;
+    line-height: 36px;
+    font-family: 'geometria', sans-serif;
+    font-size: 14px;
+    color: #7d8c8f;
+    margin-right: 15px;
+    float: left;
+}
+.psis{
+    width:640px;
+    margin: 0 auto;
+}
+.psis li{
+    text-align: left;
+    height:40px;
+    padding-top:10px;
+    line-height: 36px;
+    font-size: 14px;
+    color:#74b673;
+    margin-left:20px;
+}
+.dohblog{
+    width:940px;
+    padding: 70px 0px 20px;
+    border-width: 1px;
+    border-color: rgb(220, 220, 220);
+    border-style: solid;
+    background-color: rgb(247, 245, 245);
+    margin: 0 auto;
+    margin-top:80px;
+    margin-bottom: 60px;
+}
+.percent {
+    background: rgb(116, 182, 115);
+    width: 81px;
+    height: 81px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 81px;
+    border-radius: 50%;
+    font-family: 'geometria', sans-serif;
+    font-weight: 900;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.forpercent{
+    font-family: 'geometria', sans-serif;
+    font-weight: 400;
+    color: #74b673;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    padding:20px 30px;
+}
+
+.item{
+    width: 349px;
+    border-width: 1px;
+    border-color: rgb(220, 220, 220);
+    border-style: solid;
+    background-color: rgb(247, 245, 245);
+    position: relative;
+    text-align: center;
+    font-family: 'geometria', sans-serif;
+    font-weight: 400;
+    color: #7d8c8f;
+    line-height: 18px;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 10px;
+}
+.item .count{
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: rgb(116, 182, 115);
+    font-family: 'geometria', sans-serif;
+    font-size: 14px;
+    line-height: 38px;
+    color: #fcfefc;
+    text-align: center;
+    left: -19px;
+    top: -19px;
+}
+.bpbutton{
+    border-radius: 25px;
+    background: #74b673 url('/img/partner/line_5-arr.png') no-repeat left center;
+    box-shadow: 0px 3px 7px 0px rgba(55, 104, 4, 0.35);
+    width: 320px;
+    height: 52px;
+    display: inline-block;
+    font-family: 'geometria', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fbfdfd;
+    line-height: 52px;
+    text-decoration: none;
+    margin: 20px auto 10px auto;
+}
+.bpbutton:hover{
+    color: #fbfdfd;
+    text-decoration: none;
+
+}
+.pub2{
+    font-family: 'geometria', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #7d8c8f;
+    text-decoration: underline;
+}
+.green-text{
+    color:#74b673 !important;
+}
+.getmoney{
+    display: inline-block;
+    background: #71b270;
+    max-width: 210px;
+    width: 100%;
+    border-radius: 15px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-family: 'geometria', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(55, 104, 4, 0.35);
+    margin-top:15px;
+}
+.getmoney:hover{
+    color:#fff;
+    text-decoration: none;
+}
+.getmoney:visited{
+    color:#fff;
+}
+.get_history{
+    text-align: center;
+    font-family: 'geometria', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4c4c4c;
+    text-decoration: underline;
+}
+.refs{
+    width: 140px;
+    height: 25px;
+    border: 1px solid #7d8c8f;
+    text-align: center;
+    font-family: 'geometria', sans-serif;
+    font-size: 12px;
+    margin-top: -3px;
+    margin-left: 20px;
+    border-radius: 30px !important;
+    padding:5px 15px;
+    float:right;
+}
+
+.reflinkb {
+    font-size: 12px;
+    color: #71b270;
+}
+
+.refinput {
+    width: 377px;
+    border: 1px solid #727272;
+    border-radius: 30px;
+    height: 25px;
+    padding: 0px 20px;
+    margin-top:10px;
+}
+
+#copy_btn{
+    background: #74b673;
+    border-radius: 15.5px;
+    height: 34px;
+    line-height: 34px;
+    font-family: 'geometria', sans-serif;
+    font-size: 14px;
+    color: #fdfefe;
+    border: none;
+    margin-left: 20px;
+    padding: 8px 20px;
+    font-style:normal;
+
+}
+#copy_btn:hover{
+    color:#fff;
+    text-decoration: underline;
+    font-style:normal;
+}
+.name-cat{
+    color: #4c4c4c;
+    font-size: 14px;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f7f5f5;
+    border: 1px solid gainsboro;
+    font-weight: 500;
+    margin-top:20px;
+}
+.faqitem{
+    padding-left: 25px;
+    border-bottom: 1px solid gainsboro;
+    padding-bottom:15px;
+    padding-top:15px;
+}
+.faqitem .name {
+    font-family: 'geometria', sans-serif;
+    font-size: 18px;
+    color: #ff4747;
+    margin:10px 0;
+}
+
+.grid-view td{
+    background: #fff;
+    border:1px #ff0084 solid;
+}
+.grid-view .table tr{
+    border:none !important;
+}
+.table-title{
+    font-family: 'geometria', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.back_btn {
+    background: #74b673 url('/img/partner/ico_back.png') no-repeat 10px 10px;
+    border-radius: 15.5px;
+    height: 34px;
+    line-height: 34px;
+    display: inline-block;
+    padding: 0px 20px 0px 30px;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+.back_btn:hover{
+    color:#fff;
+}
+.btn .btn-default{
+    border-radius: 30px !important;
+}
+.banner-links{
+    text-align:center;
+}
+.banner-links a{
+    text-decoration: underline;
+    color:#74b673 !important;
+}
+.banner-links div{
+    margin-top:10px;
+}
+.back-link{
+    display: inline-block;
+    float: right;
+    font-family: 'geometria', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    line-height: 26px;
+    text-decoration: none;
+    padding: 0px 37px;
+    margin-top: 40px;
+    text-align: left;
+}
+.back-link:hover{
+    text-decoration: none;
+    color:#fff;
+}
+.faq{
+    font-size:16px;
+}
+.faq ul{
+    margin-top:-5px !important;
+    margin-bottom:20px;
+}
+.faq li{
+    list-style: disc;
+    margin-left:30px;
+}
+.faq a{
+    text-decoration: underline;
+    color: #74b673 !important;
+}
+
+.bigbanner{
+    display: inline-block;
+    float: left;
+}

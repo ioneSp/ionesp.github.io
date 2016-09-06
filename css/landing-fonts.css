@@ -1,0 +1,47 @@
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/Geometria/Geometria.eot');
+    src: url('../fonts/Geometria/Geometria.eot') format('embedded-opentype'),
+         url('../fonts/Geometria/Geometria.woff2') format('woff2'),
+         url('../fonts/Geometria/Geometria.woff') format('woff'),
+         url('../fonts/Geometria/Geometria.ttf') format('truetype'),
+         url('../fonts/Geometria/Geometria.svg#Geometria') format('svg');
+}
+@font-face {
+    font-family: 'GeometriaBold';
+    src: url('../fonts/GeometriaBold/GeometriaBold.eot');
+    src: url('../fonts/GeometriaBold/GeometriaBold.eot') format('embedded-opentype'),
+         url('../fonts/GeometriaBold/GeometriaBold.woff2') format('woff2'),
+         url('../fonts/GeometriaBold/GeometriaBold.woff') format('woff'),
+         url('../fonts/GeometriaBold/GeometriaBold.ttf') format('truetype'),
+         url('../fonts/GeometriaBold/GeometriaBold.svg#GeometriaBold') format('svg');
+}
+@font-face {
+    font-family: 'GeometriaExtaBlack';
+    src: url('../fonts/GeometriaExtraBlack/GeometriaExtaBlack.eot');
+    src: url('../fonts/GeometriaExtraBlack/GeometriaExtaBlack.eot') format('embedded-opentype'),
+         url('../fonts/GeometriaExtraBlack/GeometriaExtaBlack.woff2') format('woff2'),
+         url('../fonts/GeometriaExtraBlack/GeometriaExtaBlack.woff') format('woff'),
+         url('../fonts/GeometriaExtraBlack/GeometriaExtaBlack.ttf') format('truetype'),
+         url('../fonts/GeometriaExtraBlack/GeometriaExtaBlack.svg#GeometriaExtaBlack') format('svg');
+}
+
+@font-face {
+    font-family: 'GeometriaLight';
+    src: url('../fonts/GeometriaLight/GeometriaLight.eot');
+    src: url('../fonts/GeometriaLight/GeometriaLight.eot') format('embedded-opentype'),
+         url('../fonts/GeometriaLight/GeometriaLight.woff2') format('woff2'),
+         url('../fonts/GeometriaLight/GeometriaLight.woff') format('woff'),
+         url('../fonts/GeometriaLight/GeometriaLight.ttf') format('truetype'),
+         url('../fonts/GeometriaLight/GeometriaLight.svg#GeometriaLight') format('svg');
+}
+@font-face {
+    font-family: 'GeometriaMedium';
+    src: url('../fonts/GeometriaMedium/GeometriaMedium.eot');
+    src: url('../fonts/GeometriaMedium/GeometriaMedium.eot') format('embedded-opentype'),
+         url('../fonts/GeometriaMedium/GeometriaMedium.woff2') format('woff2'),
+         url('../fonts/GeometriaMedium/GeometriaMedium.woff') format('woff'),
+         url('../fonts/GeometriaMedium/GeometriaMedium.ttf') format('truetype'),
+         url('../fonts/GeometriaMedium/GeometriaMedium.svg#GeometriaMedium') format('svg');
+}

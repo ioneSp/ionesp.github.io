@@ -1,0 +1,9 @@
+User-agent: *
+Disallow:/wp-admin/
+Disallow:/wp-login.php
+Disallow: /site/
+Disallow: /recover-password/
+Disallow: /register/
+
+Host: zenlink.ru
+Sitemap: http://zenlink.ru/sitemap.xml

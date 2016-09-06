@@ -1,0 +1,33 @@
+@font-face {
+	font-family: Geo;
+	src: url("../fonts/Geometria.otf");
+}
+
+@font-face {
+	font-family: G-E-B;
+	src: url("../fonts/Geometria-ExtaBlack.otf");
+}
+
+@font-face {
+	font-family: G-L;
+	src: url("../fonts/Geometria-Light.otf");
+}
+
+@font-face {
+	font-family: G-B;
+	src: url("../fonts/Geometria-Bold.otf");
+}
+
+@font-face {
+	font-family: G-M;
+	src: url("../fonts/Geometria-Medium.otf");
+}
+
+
+/* font-family: "GothamProNarrowMedium"; */
+@font-face {
+	font-family: "OpenSans-Bold";
+	src: url("../fonts/GothamProNarrowMedium/GothamProNarrowMedium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
