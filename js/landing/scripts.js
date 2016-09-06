@@ -37,6 +37,13 @@ $(document).ready(function ()
 			$('.mobile-button').toggleClass('close-btn');
 		}
 	});
+	$(window).scroll(function () {
+		if($('.anchor-list').hasClass('mob-show')){
+			$('.anchor-list').removeClass('mob-show').addClass('mob-hide');
+			$('.mobile-button').toggleClass('close-btn');
+			return;
+		}
+	});
 	// Подключение плагинов
 	$('.fancybox').fancybox({
 		beforeClose: function(){
@@ -201,6 +208,10 @@ function setUp() {
 			var timer;
 
 			$(window).scroll(function() {
+				if($('.anchor-list').hasClass('mob-show')){
+					$('.anchor-list').removeClass('mob-show').addClass('mob-hide');
+					$('.mobile-button').toggleClass('close-btn');
+				}
 				var st = $(window).scrollTop();
 
 				btn[st > 250 ? "addClass" : "removeClass"]("show");
@@ -297,4 +308,5 @@ create_discount_system = function(){
 			needUpdateElement = false;
 		}
 	}
+
 }
