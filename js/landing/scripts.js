@@ -4,6 +4,12 @@ var create_discount_system,
 
 $(document).ready(function ()
 {
+	$(window).scroll(function () {
+		if($('.anchor-list').hasClass('mob-show')){
+			$('.anchor-list').removeClass('mob-show').addClass('mob-hide');
+			$('.mobile-button').toggleClass('close-btn');
+		}
+	});
 	$('.anchor').on('click',function (e) {
 		if($('.anchor-list').hasClass('mob-show')){
 			$('.anchor-list').removeClass('mob-show').addClass('mob-hide');
@@ -35,13 +41,6 @@ $(document).ready(function ()
 		if($(window).width()>768 && $('.anchor-list').hasClass('mob-show')){
 			$('.anchor-list').removeClass('mob-show').addClass('mob-hide');
 			$('.mobile-button').toggleClass('close-btn');
-		}
-	});
-	$(window).scroll(function () {
-		if($('.anchor-list').hasClass('mob-show')){
-			$('.anchor-list').removeClass('mob-show').addClass('mob-hide');
-			$('.mobile-button').toggleClass('close-btn');
-			return;
 		}
 	});
 	// Подключение плагинов
